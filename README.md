@@ -142,6 +142,51 @@ body {
 }
 ```
 
+# step4: 페이지 탐색(navigation 콘텐츠) 추가
+
+## nav 내부 무순서 리스트 삽입
+
+```
+<!doctype html>
+<html lang="en">
+...
+<body>
+<header>
+    ...
+    <nav>
+        <ul>
+            <li><a href="/places.html">Destinations</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+</header>
+...
+</body>
+</html>
+```
+
+## places.html 만들기
+
+파일 생성만 하므로 생략하겠습니다.
+
+## shared.css 수정
+
+```css
+body {
+    ...
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#page-logo a {
+    ...
+}
+```
+
 # 참고자료
 
 [【한글자막】 100일 코딩 챌린지 - Web Development 부트캠프](https://www.udemy.com/share/10694e3@jiflikM97neqVdzn_C6e4DmAtYKYglo5gZ58wroteFDUC2i_KfU5BKvxbIkb2xoy2g==/)
