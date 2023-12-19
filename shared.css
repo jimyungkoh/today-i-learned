@@ -9,9 +9,30 @@ ul {
     padding: 0;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
+    padding: 20px 5%;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 20px;
+}
+
+nav a {
+    font-size: 24px;
+    text-decoration: none;
+    color: dodgerblue;
 }
 
 #page-logo a {
