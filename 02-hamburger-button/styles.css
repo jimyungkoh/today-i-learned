@@ -124,7 +124,8 @@ main h1 {
 
 .food-item {
     background-color: white;
-    border-radius: 6px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4);
     overflow: hidden;
 }
 
