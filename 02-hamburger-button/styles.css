@@ -1,0 +1,173 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background: #EA517F;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-header {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 5%;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #EA517F;
+    text-transform: uppercase;
+}
+
+/* 햄버거 버튼 생성 코드 */
+.menu-btn {
+    width: 3rem;
+    height: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 햄버거 버튼 생성 코드 */
+.menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: #EA517F;
+}
+
+#main-header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header li {
+    margin: 0 1rem;
+}
+
+#main-header nav a {
+    color: #EA517F;
+    font-size: 1.25rem;
+}
+
+#main-header nav a:hover {
+    color: rgba(234, 81, 127, 0.8);
+}
+
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#side-drawer:target {
+    display: block;
+}
+
+#side-drawer header {
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    padding: 0 5%;
+}
+
+#side-drawer ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 4rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side-drawer li {
+    margin: 1rem 0;
+}
+
+#side-drawer a {
+    color: #EA517F;
+    font-size: 3rem;
+}
+
+main h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+#latest-products {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+#latest-products ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.food-item {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.food-item h2 {
+    color: #EA517F;
+}
+
+.food-item img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.food-item-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgba(234, 81, 127, 0.8);
+    color: white;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn:hover {
+    background-color: #EA517F;
+}
+
+@media (max-width: 48rem) {
+    #main-header nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    #latest-products ul {
+        grid-template-columns: 100%;
+    }
+}
