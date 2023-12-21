@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    action: 요청이 보내지는 URL 주소와 통로를 지정
+    method: 전송되는 하는 HTTP 요청의 종류를 선택
+    -->
+<form action="/" method="GET">
+    <label for="user-name">Your Name </label>
+    <input type="text" name="user-name" id="user-name"/>
+    <label for="user-email">Your Email</label>
+    <input type="email" name="user-email" id="user-email"/>
+    <label for="user-age">Your Age</label>
+    <input type="number" step="1" name="user-age" id="user-age"/>
+    <label for="user-password">Your password</label>
+    <input type="password" name="user-password" id="user-password"/>
+    <label for="user-birthday">Your Birthday</label>
+    <input type="date" name="user-birthday" id="user-birthday"/>
+    <hr>
+    <h2>How should we verify your account?</h2>
+    <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-text-message" value="text-message">
+        <label for="verify-text-message">Via text message (SMS)</label>
+    </div>
+    <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-phone" value="phone">
+        <label for="verify-phone">Via a phone call</label>
+    </div>
+    <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-email" value="email">
+        <label for="verify-email">Via an email</label>
+    </div>
+    <button>Submit</button>
+</form>
+</body>
+</html>
